@@ -5,6 +5,7 @@
 *.o
 *.out
 *.exe
+out
 
 # Ignore build directories
 build/
