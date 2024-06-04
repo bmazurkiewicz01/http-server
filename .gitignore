@@ -1,2 +1,23 @@
-.vscode
-out
+# Ignore Visual Studio Code settings files
+.vscode/
+
+# Ignore compiled object files and executables
+*.o
+*.out
+*.exe
+
+# Ignore build directories
+build/
+bin/
+
+# Ignore Makefile generated files
+Makefile.in
+Makefile.am
+
+# Ignore CMake build directory
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+
+# Ignore server logs
+*.log
