@@ -20,7 +20,6 @@
 int server_socket = -1;
 int stop_flag = 0;
 char cwd[BUFFER_SIZE];
-pthread_mutex_t log_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 int main(int argc, char *argv[]) {
     int opt;
