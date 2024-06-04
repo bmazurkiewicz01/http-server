@@ -9,7 +9,7 @@
 
 void log_request(const char *log_file, const char *request, const char *client_ip, pthread_t tid) {
     char log_path[BUFFER_SIZE]; 
-    snprintf(log_path, sizeof(log_path), "%s/%s", cwd, log_file);
+    snprintf(log_path, sizeof(log_path) + 1, "%s/%s", cwd, log_file);
 
     pthread_mutex_lock(&log_mutex);
 
