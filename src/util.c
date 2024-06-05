@@ -73,5 +73,6 @@ void daemonize() {
 void signal_handler(int sig) {
     if (sig == SIGTERM) {
         stop_flag = 1;
+        exit(EXIT_SUCCESS);
     }
 }
